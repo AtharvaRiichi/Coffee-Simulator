@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pixel Brew Café</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<style>
+
+/* GLOBAL */
+
+body{
+margin:0;
+font-family:'Press Start 2P', cursive;
+color:#fffaf0;
+
+/* espresso → mocha gradient */
+background:linear-gradient(180deg,#2a1a12,#6f4e37);
+
+/* subtle texture effect */
+background-image:
+radial-gradient(circle at 20% 20%, rgba(255,255,255,0.03) 2px, transparent 2px),
+radial-gradient(circle at 80% 80%, rgba(0,0,0,0.2) 2px, transparent 2px);
+
+background-size:80px 80px;
+}
+
+/* HEADER */
+
+header{
+background:#1c120c;
+padding:25px;
+text-align:center;
+border-bottom:4px solid #7fffd4;
+}
+
+header h1{
+font-size:20px;
+color:#f5deb3;
+margin-bottom:10px;
+}
+
+nav a{
+color:#ffcc80;
+text-decoration:none;
+font-size:11px;
+}
+
+nav a:hover{
+color:#7fffd4;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:#8b5e3c;
+border-bottom:4px solid #7fffd4;
+}
+
+.hero h2{
+font-size:16px;
+margin-bottom:25px;
+}
+
+.hero p{
+max-width:650px;
+margin:auto;
+font-size:10px;
+line-height:1.7;
+}
+
+.hero button{
+margin-top:35px;
+padding:15px 25px;
+background:#ffb347;
+border:none;
+font-family:'Press Start 2P';
+cursor:pointer;
+box-shadow:4px 4px #000;
+}
+
+.hero button:hover{
+background:#ffd27f;
+}
+
+/* COFFEE SECTION */
+
+.coffee-section{
+padding:70px 20px;
+text-align:center;
+}
+
+.coffee-section h2{
+margin-bottom:50px;
+color:#ffe4c4;
+}
+
+/* FLEX LAYOUT */
+
+.coffee-container{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+/* COFFEE CARD */
+
+.coffee-card{
+background:#fff5e1;
+color:#3b2a20;
+width:260px;
+padding:20px;
+
+border:4px solid #000;
+box-shadow:6px 6px #000;
+}
+
+.coffee-card img{
+width:100%;
+height:170px;
+object-fit:cover;
+margin-bottom:15px;
+}
+
+.coffee-card h3{
+font-size:12px;
+margin-bottom:10px;
+}
+
+.coffee-card p{
+font-size:9px;
+line-height:1.6;
+margin-bottom:18px;
+}
+
+.coffee-card button{
+background:#ffb347;
+border:none;
+padding:10px 14px;
+font-family:'Press Start 2P';
+cursor:pointer;
+box-shadow:3px 3px #000;
+}
+
+.coffee-card button:hover{
+background:#ffd27f;
+}
+
+/* ABOUT */
+
+.about{
+padding:70px 20px;
+background:#f5deb3;
+color:#3b2a20;
+text-align:center;
+
+border-top:4px solid #7fffd4;
+border-bottom:4px solid #7fffd4;
+}
+
+.about h2{
+margin-bottom:20px;
+}
+
+.about p{
+max-width:700px;
+margin:auto;
+font-size:10px;
+line-height:1.7;
+}
+
+/* FOOTER */
+
+footer{
+background:#1c120c;
+text-align:center;
+padding:20px;
+font-size:10px;
+color:#f5deb3;
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<h1>Pixel Brew Café</h1>
+
+<nav>
+<a href="#about">About</a>
+</nav>
+
+</header>
+
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<h2>Welcome to the Retro Roast Coffee Simulator</h2>
+
+<p>
+Step into Pixel Brew Café, a retro-inspired virtual coffee brewing simulator where you can explore classic coffee drinks and experience the process of crafting them in a playful arcade-style interface. Discover new flavors, experiment with brewing styles, and enjoy the charm of a pixel-art café world.
+</p>
+
+<button>Start Brewing</button>
+
+</section>
+
+
+
+<!-- COFFEE SELECTION -->
+
+<section class="coffee-section">
+
+<h2>Coffee Selection</h2>
+
+<div class="coffee-container">
+
+
+<!-- FRAPPECCINO -->
+
+<div class="coffee-card">
+
+<img src="Frappe_pix.png" alt="Frappecchino Coffee">
+
+<h3>Frappeccino</h3>
+
+<p>
+A refreshing blended coffee drink topped with creamy foam and sweet flavors.
+</p>
+
+<button>Brew This</button>
+
+</div>
+
+
+
+<!-- AMERICANO -->
+
+<div class="coffee-card">
+
+<img src="Americano_pix.png" alt="Americano Coffee">
+
+<h3>Americano</h3>
+
+<p>
+A smooth espresso diluted with hot water creating a rich and balanced coffee flavor.
+</p>
+
+<button>Brew This</button>
+
+</div>
+
+
+
+<!-- LATTE -->
+
+<div class="coffee-card">
+
+<img src="Latte_pix.jpg" alt="Latte Coffee">
+
+<h3>Latte</h3>
+
+<p>
+A creamy espresso drink combined with steamed milk for a smooth and velvety taste.
+</p>
+
+<button>Brew This</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ABOUT SECTION -->
+
+<section class="about" id="about">
+
+<h2>About the Simulator</h2>
+
+<p>
+Pixel Brew Café is a retro-inspired virtual coffee brewing simulator designed to combine the cozy atmosphere of a café with the charm of classic 8-bit arcade games. The simulator allows users to explore different coffee drinks and understand the basics of brewing in a fun and interactive way.
+</p>
+
+<p>
+Each coffee on the menu represents a unique brewing style. From bold espresso-based drinks to creamy milk-based beverages, users can explore the ingredients, preparation process, and flavor profiles that make each drink special. The goal of the simulator is to make coffee discovery enjoyable while presenting the experience through a nostalgic pixel-art interface.
+</p>
+
+<p>
+Inspired by old-school video games, Pixel Brew Café turns the coffee brewing process into a playful digital experience. Users can select a drink, learn about its preparation, and simulate the steps involved in crafting the perfect cup.
+</p>
+
+<p>
+Whether you are a coffee enthusiast, a casual café visitor, or someone who simply enjoys retro game aesthetics, Pixel Brew Café offers a creative environment where technology, coffee culture, and pixel-art design come together.
+</p>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 Pixel Brew Café — Crafted for coffee lovers.
+
+</footer>
+
+
+</body>
+</html>
